@@ -1,5 +1,5 @@
 
-from math_series.series import fibonacci
+from math_series.series import fibonacci, lucas
 
 
 def test_fibonacci():
@@ -8,7 +8,7 @@ def test_fibonacci():
     assert actual == expected
 
 
-# def test_lucas():
-#     actual = lucas(9)
-#     expected = 76
-#     assert actual == expected
+def test_lucas():
+    actual = lucas(9)
+    expected = 76
+    assert actual == expected

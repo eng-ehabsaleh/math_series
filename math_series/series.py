@@ -25,6 +25,7 @@ def lucas(n):
 
 
 def sum_series(na, n2=0, n3=1):
+	
     if n2 == 0 and n3 == 1 and na <= 1:
         return 1
     elif na > 1 and n2 == 0 and n3 == 1:
@@ -33,3 +34,10 @@ def sum_series(na, n2=0, n3=1):
         return(sum_series(na-1) + sum_series(na-2))
     else:
         return (sum_series(na-1) + sum_series(na-2))
+
+
+fibonacci(9)
+
+lucas(9)
+
+sum_series(9)
